@@ -17,11 +17,11 @@
 				<img src="images/logo.svg">
 			</div>
 			<div id="navigation">
-			<p>WORK</p>
-			<p>ABOUT</p>
-			<p>RESUME</p>
-			<p>SKILLS</p>
-			<p>CONTACT</p>
+			<p> <a href="#Work">WORK</a></p>
+			<p> <a href="#Work">ABOUT</a></p>
+			<p> <a href="images/Ana G. Resume.pdf">RESUME</a></p>
+			<p> <a href="#Skills">SKILLS </a></p>
+			<p><a href="#Footer"> CONTACT</a></p>
 			</div>
 		</nav>
 	</header>
@@ -30,7 +30,7 @@
 					<img src="images/hero image.png">
 					<div class= "boxcontent">
 						<p>Hi, I am <span class='special-word'> Ana Gentile </span> ! </p>
-						<p>UX/UI designer, solving problems with data analysis
+						<p> <span class="highlight">UX/UI designer</span>, solving problems with <span class="highlight">data analysis</span>
 					and user-centric digital products.</p>
 						<button>Download Resume</button>
 					</div>
@@ -39,7 +39,7 @@
 
 <!-- My Work Section Constructed using CSS Grid -->
 
-	<section class="myWork">
+	<section class="myWork" id="Work">
 		<h1> WORK </h1>
 		<div class="workGrid">
 			<div id="NAAblock" class="workGridBlock">
@@ -80,11 +80,11 @@
 	</section>
 
 	<!--  My UX Skills section coded using CSS flex  -->
-	<section class="mySkills">
+	<section class="mySkills" id="Skills">
 		<h1>MY SKILLS</h1>
 		<div class="flexContainer">
 			<div class="skillBox">
-				<img src="images/Ux Research.svg" alt="Ux Research">
+				<img id="skillImg1"src="images/Ux Research.svg" alt="Ux Research">
 				<h2> UX RESEARCH</h2>
 				<p>Quantitative Research</p>
 				<p>Qualitative Research</p>
@@ -92,7 +92,7 @@
 				<p>User Interviews</p>
 			</div>
 			<div class="skillBox">
-				<img src="images/Ux Design.svg" alt="Ux Design">
+				<img id="skillImg2"src="images/Ux Design.svg" alt="Ux Design">
 				<h2> UX DESIGN</h2>
 				<p>Wireframe</p>
 				<p>Prototype</p>
@@ -100,7 +100,7 @@
 				<p>Persona Creation</p>
 			</div>
 			<div class="skillBox">
-				<img src="images/Ui Design.svg" alt="UI Design">
+				<img id="skillImg3"src="images/Ui Design.svg" alt="UI Design">
 				<h2> UI DESIGN</h2>
 				<p>Design System</p>
 				<p>Style Guide</p>
@@ -108,7 +108,7 @@
 				<p>Responsive Design</p>
 			</div>
 			<div class="skillBox">
-				<img src="images/Analytics.svg" alt="Analytics">
+				<img id="skillImg4" src="images/Analytics.svg" alt="Analytics">
 				<h2> ANALYTICS </h2>
 				<p>Web Analytics</p>
 				<p>Data Visualization</p>
@@ -116,7 +116,7 @@
 				<p>Business Metrics</p>
 			</div>
 			<div class="skillBox">
-				<img src="images/Development.svg" alt="Development">
+				<img id="skillImg5" src="images/Development.svg" alt="Development">
 				<h2> DEVELOPMENT </h2>
 				<p>Python</p>
 				<p>SQL</p>
@@ -141,20 +141,27 @@
 	</section>
 		<!--  My Footer section -->
 			<footer>
-					<section class="centre">
+					<section class="centre" id= "Footer">
 						<div class="boxfooter">
 							<h1>Let’s Connect!</h1>
 							<p>I'm looking forward to hearing from you.</p>
 						</div>
 						<div class="icons">
-							<img src="images/LINKEDIN.svg">
-							<img src="images/EMAIL.svg">
+							
+							<a href="https://www.linkedin.com/in/anaribasgentile/">
+								<img src="images/LINKEDIN.svg">
+							
+							<a href="mailto:anna.quintilhano@outlook.com">
+								<img src="images/EMAIL.svg"></a>
 						</div>
 						<div class="copyright">
 							<p>© 2022 All rights reserved by Ana Gentile </p>
 						</div>
 					</section>
-					<img id="AG"src="images/AG -.svg">
+					<a href="#navigation">
+					<img id="AG"src="images/AG -.svg"> </a>
 			</footer>		
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 </html>	
