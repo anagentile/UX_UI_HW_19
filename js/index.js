@@ -1,3 +1,4 @@
+
 // Activity Tests
 console.log("Your index.js file is loaded correctly!");
 
@@ -87,3 +88,75 @@ $("document").ready(function(){
     }); 
    
 });
+
+
+// $("document").ready(function(){ 
+//     $("#NaaImage img").mouseenter(function(){       
+//         $(this).attr('src','images/naahover.png');  
+//         $(this).animate({ opacity: "1.0"}, slow);    
+//     });     
+//     $("#NaaImage img").mouseleave(function(){       
+//         $(this).attr('src','images/naa.png'); 
+//         $(this).animate({ opacity: "1.0"}, slow);         
+//     }); 
+   
+// });
+
+$(document).ready(function() {
+    $(window).on("scroll", function() {
+      console.log($(this).scrollTop())
+      if($(this).scrollTop() >= 350){
+        // set to new image
+        $("#NaaImage img").attr('src','images/naahover.png');
+        $( this ).animate(slow);
+      } else {
+        //back to default
+        $("#NaaImage img").attr('src','images/naa.png');
+      }
+    })
+  })
+
+//   $(document).ready(function() {
+//     $(window).on("scroll", function() {
+//       console.log($(this).scrollTop())
+//       if($(this).scrollTop() >= 600){
+//         // set to new image
+//         $("#nextImage img").attr('src','images/nexthover.png');
+//         $( this ).animate(slow);
+//       } else {
+//         //back to default
+//         $("#nextImage img").attr('src','images/next tv.png');
+//       }
+//     })
+//   })
+
+  $("document").ready(function(){ 
+    $("#nextImage img").mouseenter(function(){       
+        $(this).attr('src','images/nexthover.png');  
+        $(this).animate({ opacity: "1.0"}, slow);    
+    });     
+    $("#nextImage img").mouseleave(function(){       
+        $(this).attr('src','images/next tv.png'); 
+        $(this).animate({ opacity: "1.0"}, slow);         
+    }); 
+   
+});
+
+
+$("document").ready(function(){ 
+    $("#ymcaImage img").mouseenter(function(){       
+        $(this).attr('src','images/ymcahover.png');  
+        $(this).animate({ opacity: "1.0"}, slow);    
+    });     
+    $("#ymcaImage img").mouseleave(function(){       
+        $(this).attr('src','images/Ymca.png'); 
+        $(this).animate({ opacity: "1.0"}, slow);         
+    }); 
+   
+});
+
+$('#navigation p').on("click", function(){
+    $(this).toggleClass("active");
+});
+  
+

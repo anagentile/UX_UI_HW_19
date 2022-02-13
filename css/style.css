@@ -31,6 +31,9 @@ a {
 #navigation p:hover{
     color: #DAB9E4;
 }
+.active{
+color: #807BA8;
+}
 
 .logo{
     width: 15%;
@@ -85,6 +88,7 @@ background: #DAB9E4;
 color: white;
 transition: all 0.6s cubic-bezier(0.76, 0, 0.24, 1);
 }
+
 
 button{
 color: white;
@@ -301,6 +305,7 @@ h1{
 #NAA{
     grid-area: NAA;
     margin: 24px;
+    transition: all 1s ease; 
 }
 
 #buttonNAA{
@@ -313,8 +318,13 @@ h1{
     margin: 0 auto;
     align-content: center;
     justify-content: center;
+    transition: all 1s ease; 
 }
 
+#NaaImag img{
+    top: 0%;
+    transition: transform 2s cubic-bezier(0.45, 0, 0.55, 1) ease-in-out;
+}
 #NAAblock{
     background-image: linear-gradient(to bottom,rgba(32, 75, 115, 0.60), rgba(32, 75, 115, 0.60)),
     url("../images/NaaImg.png");
@@ -329,6 +339,7 @@ h1{
     filter: drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.25));
     display: flex;
     height: 400px;
+    transition: all 1s ease; 
 }
 #NAAblock:hover {
     background-image: linear-gradient(to bottom,rgba(32, 75, 115, 0.80), rgba(32, 75, 115, 0.80)),
@@ -384,6 +395,8 @@ h1{
     align-content: center;
     justify-content: center;
 }
+
+
 
 #YmcaBlock{
     background-image: linear-gradient(to bottom,rgba(240, 61, 62, 0.54), rgba(240, 61, 62, 0.6)),
@@ -510,6 +523,45 @@ h1{
             padding: 30px;
             align-content: center;
             justify-content: space-evenly;
+        }
+
+        /* about me */
+
+        .heroImgabout img{
+            margin-bottom: 0px;
+            display: flex;
+            padding: 0%;
+            width: 40%;
+        }
+    
+        .heroImgabout h1{
+            justify-content: center;
+            justify-items: center;
+            margin: 0 auto;
+            display: flex;
+            color: #807BA8;
+        }
+    
+        .boxcontentab{
+            padding: 2%;
+            align-items: center;
+            justify-items: flex-end;
+            font-size: 24px;
+            margin-right: 200px;
+            margin-left: 40px;
+        }
+    
+        .heroImgabout{
+            margin-bottom: 400px;
+            padding: 2%;
+        }
+    
+        .contentabout{
+            margin: 0 auto;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 100px;
         }
 
     /* Adjustments for 700px */
@@ -721,3 +773,63 @@ h1{
         font-size: 12px;
     }
     }}
+
+    /* About me */
+
+    p .bold{
+        font-weight: bold;
+    }
+
+    .heroImgabout img{
+        margin-bottom: 0px;
+        display: flex;
+        padding: 0%;
+        width: 40%;
+    }
+
+    .heroImgabout h1{
+        justify-content: center;
+        justify-items: center;
+        margin: 0 auto;
+        display: flex;
+        color: #807BA8;
+    }
+
+    .boxcontentab{
+        padding: 2%;
+        align-items: center;
+        justify-items: flex-end;
+        font-size: 24px;
+        margin-right: 200px;
+        margin-left: 40px;
+    }
+
+    .heroImgabout{
+        margin-bottom: 400px;
+        padding: 2%;
+    }
+
+    .contentabout{
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .background{
+        margin-top: 200px;
+        background: linear-gradient(90deg, rgba(218, 185, 228, 0.8) 1.69%, rgba(218, 185, 228, 0.8) 27.14%, rgba(244, 241, 255, 0.8) 71.76%);
+        justify-content: center;
+    }
+
+    .highlightcareer {
+        display: flex;
+
+    }
+    .eduwork img{
+        margin-top: -80px;
+    }
+
+    
+   

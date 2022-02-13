@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
 
-	<title>Ana Gentile's Portfolio</title>
+	<title>Ana Gentile's About Me</title>
 </head>
 <body>
-	<header class="color">
+	<header>
 		<nav id="navBar">
 			<div class= logo>
-				<img src="images/logo.svg">
+				<a href="index.html">
+				<img src="images/logo.svg"></a>
 			</div>
 			<div id="navigation">
-			<p> <a href="#Work">WORK</a></p>
+			<p> <a href="index.html">WORK</a></p>
 			<p> <a href="about.html">ABOUT</a></p>
 			<p> <a href="images/Ana G. Resume.pdf">RESUME</a></p>
 			<p> <a href="#Skills">SKILLS </a></p>
@@ -25,62 +26,33 @@
 			</div>
 		</nav>
 	</header>
-			<section class="heroImg color">
-				<div class="content">
-					<img src="images/hero image.png">
-					<div class= "boxcontent">
-						<p>Hi, I am <span class='special-word'> Ana Gentile </span> ! </p>
-						<p> <span class="highlight">UX/UI designer</span>, solving problems with <span class="highlight">data analysis</span>
-					and user-centric digital products.</p>
-					<a href="images/Ana G. Resume.pdf"><button>Download Resume</button></a>
+			<section class="heroImg heroImgabout">
+				<h1> ABOUT ME</h1>
+				<div class="content contentabout">
+					<img src="images/aboutmeImg.png">
+					<div class= "boxcontentab">
+						   <p> Hello, I am <span class="bold">Ana Gentile</span>, a UX designer skilled in User Interface and Business Analytics. Based in Toronto, Canada.<p>
+						   <p>I am passionate about solving challenging user problems, by using <span class="bold" > data analysis </span>and <span class="bold">user-centric </span>digital design.</p>
+							<p> the last  <span class="bold" > 12 years</span>, I’ve worked in different industry sectors, such as Financial, Banking, Technology and Health. </p>
+							<p>Managing, using financial and data analysis, and reaching for<span class="bold" > innovative and data-driven solutions</span>. </p>
+							
+							<p>To learn more about me, please check out my resume:</p>
+							<a href="images/Ana G. Resume.pdf">	<button>Resume</button></a>
 					</div>
 				</div>
 			</section>
 
-<!-- My Work Section Constructed using CSS Grid -->
-
-	<section class="myWork" id="Work">
-		<h1> WORK </h1>
-		<div class="workGrid">
-			<div id="NAAblock" class="workGridBlock">
-				<div id="NAA" class="workGridArea">
-					<h3>National Archives of Australia - RWD Website Redesign Project</h3>
-					<p>Responsive Website redesign proposed to improve the intuitiveness of
-					research process making the National Archives of Australia’s information easier, 
-					and simpler to navigate.</p>
-					<button id="buttonNAA"class="secondaryButton workGridArea">View Case Study</button>
-				</div>			
-				<div id=NaaImage class="workGridArea">
-					<img src="images/naa.png" alt="NAA Project">
-				</div>
-			</div>
-			<div id="NextBlock" class="workGridBlockB">
-				<div id="NextTV" class="workGridArea">
-					<h3>Next TV- Mobile App- UX Design Project</h3>
-					<p>Mobile app designed to improve video streaming experience so that users are satisfied 
-					based on a more personalized and tailored recommendation systems.</p>
-					<button id="buttonNext"class="secondaryButton workGridArea">View Case Study</button>
-				</div>
-				<div id=nextImage class="workGridArea">
-					<img src="images/next tv.png" alt="Next Tv Project">
-				</div>
-			</div>
-			<div id="YmcaBlock" class="workGridBlockC">	
-				<div id="Ymca" class="workGridArea">
-					<h3>YMCA Saskatoon - RWD Website Redesign</h3>
-					<p>Responsive redesign of the YMCA's Website aimed at helping and supporting prospective donors 
-					to understand the organization's mission through a better navigation experience.</p>
-					<button id="buttonYMCA"class="secondaryButton workGridArea">View Case Study</button>
-				</div>
-				<div id=ymcaImage class="workGridArea">
-					<img src="images/Ymca.png" alt="YMCA Project">
-				</div>
-			</div>
-		</div>
-	</section>
-
+<section class="highlightcareer background">
+	<div class="eduwork">
+		<img src="images/Education.svg">
+		<img src="images/Work Exp.svg">
+	</div>
+</section>
+<div class="effect">
+	<img src="images/Rectangle 50.svg">
+</div>
 	<!--  My UX Skills section coded using CSS flex  -->
-	<section class="mySkills" id="Skills">
+	<section class="mySkills skillsabout" id="Skills">
 		<h1>MY SKILLS</h1>
 		<div class="flexContainer">
 			<div class="skillBox">
