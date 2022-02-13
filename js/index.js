@@ -160,3 +160,8 @@ $('#navigation p').on("click", function(){
 });
   
 
+$(".icons").on("click", function(){
+    $("#navigation a").slideToggle(); 
+})
+
+
