@@ -474,6 +474,7 @@ h1{
         padding: 10px 25px;
         font-size: 16px;
         }
+
         .myWork h1{
             margin: 18px;
             padding: 1%;
@@ -524,45 +525,8 @@ h1{
             align-content: center;
             justify-content: space-evenly;
         }
-
-        /* about me */
-
-        .heroImgabout img{
-            margin-bottom: 0px;
-            display: flex;
-            padding: 0%;
-            width: 40%;
-        }
+    }
     
-        .heroImgabout h1{
-            justify-content: center;
-            justify-items: center;
-            margin: 0 auto;
-            display: flex;
-            color: #807BA8;
-        }
-    
-        .boxcontentab{
-            padding: 2%;
-            align-items: center;
-            justify-items: flex-end;
-            font-size: 24px;
-            margin-right: 200px;
-            margin-left: 40px;
-        }
-    
-        .heroImgabout{
-            margin-bottom: 400px;
-            padding: 2%;
-        }
-    
-        .contentabout{
-            margin: 0 auto;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            margin-bottom: 100px;
-        }
 
     /* Adjustments for 700px */
 
@@ -772,7 +736,7 @@ h1{
     .copyright p{
         font-size: 12px;
     }
-    }}
+    }
 
     /* About me */
 
@@ -814,11 +778,11 @@ h1{
         padding: 10px;
         display: flex;
         align-items: center;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
 
     .background{
-        margin-top: 200px;
+        margin-top: 100px;
         background: linear-gradient(90deg, rgba(218, 185, 228, 0.8) 1.69%, rgba(218, 185, 228, 0.8) 27.14%, rgba(244, 241, 255, 0.8) 71.76%);
         justify-content: center;
     }
@@ -831,5 +795,94 @@ h1{
         margin-top: -80px;
     }
 
+ /* about me  MEDIA QUERY*/ 
+
+    @media only screen and (max-width: 1100px){
+
+        .boxcontentab{
+            font-size: 20px;
+            margin-right: 0px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            padding: 0%;
+            margin-left: 20px;
+        }
+        .heroImgabout img{
+            width: 50%;
+            align-items: center;
+            align-content: center;
+            margin-right: 20px;
+        }
+
+        .heroImgabout{
+            margin-bottom: 200px;
+        }
     
-   
+        .heroImgabout h1{
+            font-size: 24px;
+        }
+
+        .boxcontentab  p{
+            margin: 4px;
+        }
+        .eduwork img{
+            padding: 1%;
+            justify-items: center;
+            margin: 2%;
+            width: 700px;
+        }
+
+        .eduwork{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+        }
+
+        .background{
+            justify-content: center;
+            display: flex;
+            margin-top: 100px;
+            width: 100%;
+        }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+ .heroImgabout img{
+        width: 400px;
+        height: 400px;
+        justify-content: center;
+        margin: 0 auto;
+
+}
+
+.heroImgabout{
+    margin-bottom: 300px;
+}
+
+.contentabout{
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.eduwork img{
+    padding: 1%;
+    justify-items: center;
+    margin: 2%;
+    width: 500px;
+}
+
+.boxcontentab  p{
+    font-size: 18px;
+    padding: 0px;
+    margin: 1px;
+}
+
+.boxcontentab {
+    margin-bottom: 100px;
+}
+}
